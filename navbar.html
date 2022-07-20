@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+
+    <style>
+        h1{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    width: 100vw;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav img{
+    width: 50%;
+    margin-top: 5px;
+}
+nav>div:nth-child(1){
+    margin-left: -30px;
+}
+nav>div:nth-child(2){
+    margin-left:-350px;
+    font-size: 17px;
+}
+nav>div:nth-child(3){
+    margin-left:250px;
+    font-size: 17px;
+
+}
+
+
+
+ol{
+    display: flex;
+}
+li{
+    margin: 2px 9px;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size:17px;
+}
+button{
+    background-color: #6C6CFF;
+    color: white;
+    padding: 12px 20px;
+    margin-top: -12px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-style: none;
+    border-radius: 20px;
+}
+#top{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#000133,#0C0D44 );
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    width: 50%;
+    margin: auto;
+    /* border: 10px solid red; */
+    margin-top: 50px;
+    font-size: 31px;
+    text-align: center;
+}
+/* #checkbox{
+    width: 80%;
+    margin: auto;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+#checkbox>div{
+   width: 8%;
+   text-align:center;
+   border: 1px solid red;
+   padding: 15px;
+   font-size: 12px;
+}
+#checkbox>div>img{
+    width: 50px;
+    margin-bottom: -10px;
+} */
+
+#checkbox{
+    width: 80%;
+    margin: auto;
+    margin-top: -20px;
+    display: grid;
+text-align: center;
+    grid-template-columns: repeat(9,1fr);
+    gap: 10px;
+}
+#checkbox>div{
+    border: 5px solid black;
+    font-size: 13px;
+} 
+#checkbox>div>img{
+    width: 50%;
+    margin-bottom: -10px;}
+
+
+
+#top-end{
+    margin-bottom:65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#top-end>button{
+    padding: 12px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    background-image: linear-gradient(to right,#5034FF ,#9C96FF );
+    color: white;
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <nav style="position:sticky">
+            <div>
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png"
+                    alt="">
+            </div>
+            <div>
+                <ol>
+                    <li><a href="">Product</a></li>
+                    <li><a href="">Use Cases</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Resources</a></li>
+
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Contact Sales</a></li>
+                    <li><a href="">Log In</a></li>
+                    <li><button>Get Started →</button></li>
+
+                </ol>
+            </div>
+        </nav>
+    </div>
+
+    <div id="top">
+        <div class="heading">
+            <h1>A platform built for a new way of working</h1>
+            <p>What woul you like to manage with monday.com Work OS?</p>
+        </div>
+
+        <div id="checkbox">
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\creat.png" alt="">
+                <h3>Creative and Design</h3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\pic2.png" alt="">
+                <h3>Software Development</h3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\p3.png" alt="">
+                <h3>Marketing</h3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\p4.png" alt="">
+                <h3>Project Management</h3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\p5.png" alt="">
+                <h3>Sales and CRM</h3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\p6.png" alt="">
+                <H3>Task Management</H3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\p7.png" alt="">
+                <h3>HR</h3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\p8.png" alt="">
+                <H3>Operations</H3>
+            </div>
+            <div>
+                <img src="C:\Users\MD. ALI\OneDrive\Pictures\p9.png" alt="">
+                <h3>More Workflows</h3>
+            </div>
+        </div>
+
+        <div id="top-end">
+            <button>Get Started</button>
+            <p>No credit card needed " " Unlimited time on Free plan</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

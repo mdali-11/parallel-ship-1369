@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+       nav {
+            width: 100vw;
+            height: 65px;
+            display: flex;
+            background-color: #F7F7F7;
+        }
+
+        nav img {
+            width: 60%;
+            margin-top: 2px;
+            margin-left: 20px;
+        }
+
+
+        form {
+            width: 28%;
+            margin: auto;
+            margin-top: 70px;
+            text-align: center;
+        }
+
+
+        .top{
+            font-size: 38px;
+            color: grey;
+    font-family: 'Montserrat', sans-serif;
+        }
+
+        p{
+            font-size: 18px;
+        }
+    
+        h3{
+    font-family: 'Montserrat', sans-serif;
+    font-style: bold;
+
+        }
+        input{
+            box-sizing: border-box;
+            width: 80%;
+            height: 40px;
+            margin: 10px;
+        }
+        input[type="submit"]{
+            width: 80%;
+            height: 45px;
+            background-color: #0073EA;
+            color: white;
+            font-size: 25px;
+            border: none;
+            cursor: pointer;
+
+        }
+        .line{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+        }
+
+     
+
+        button{
+        background-color: transparent;
+         padding: 10px 20px;
+         font-size: 20px;
+         cursor: pointer;
+         margin-bottom: 20px;
+         border: 1px solid grey;
+        }
+
+        span{
+            position: relative;
+            left: -5px;
+        
+            top: 5px;
+        }
+            
+    </style>
+</head>
+
+<body>
+
+
+
+    <nav>
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png"
+                alt="">
+        </div>
+
+    </nav>
+
+    <form action="">
+        <p class="top">Login to your Account</p>
+
+        <h3>Enter your work email address</h3>
+        <input type="email" placeholder="example@company.com"><br>
+        <input type="submit" value="Next →">
+     
+        <div class="line">
+        <p>Or Sign in with</p>
+        <button><span><img src="https://cdn.monday.com/images/logo_google_v2.svg" alt=""></span>  Google </button>
+    </div>
+
+    <p>Don't have an account yet? <a href="">Sign up</a></p>
+
+</form>
+    
+
+
+
+</body>
+
+</html>

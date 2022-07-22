@@ -30,12 +30,12 @@
             left: 0;
         }
 
-        nav img {
+        #navbar nav img {
             width: 50%;
             margin-top: 5px;
         }
 
-        nav>div:nth-child(1) {
+        #navbar nav>div:nth-child(1) {
             margin-left: -30px;
         }
 
@@ -52,16 +52,16 @@
 
 
 
-        ol {
+        #navbar ol {
             display: flex;
         }
 
-        li {
+        #navbar li {
             margin: 2px 9px;
             list-style: none;
         }
 
-        a {
+       #navbar a {
             text-decoration: none;
             font-size: 17px;
         }
@@ -72,12 +72,13 @@
             padding: 12px 20px;
             margin-top: -12px;
             font-size: 15px;
+            font-weight: bold;
             letter-spacing: 1px;
             border-style: none;
             border-radius: 20px;
         }
 
-        #top {
+        #top{
             width: 100vw;
             height: 100vh;
             background-image: linear-gradient(#000133, #0C0D44);
@@ -157,6 +158,7 @@
         #top-end>button {
             padding: 12px 30px;
             font-size: 18px;
+            font-weight: bold;
             border-radius: 25px;
             background-image: linear-gradient(to right, #5034FF, #9C96FF);
             color: white;
@@ -166,12 +168,316 @@
         #mid>img {
             width: 100%;
         }
-        #mid>p{
+
+        #mid>p {
             font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      font-weight: bold;
-      font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
         }
+
+        .para {
+            width: 90%;
+            height: 200px;
+            margin: auto;
+            margin-top: 40px;
+            display: flex;
+            gap: 40px;
+            justify-content: space-between;
+        }
+
+        .para>div:nth-child(1) {
+            width: 50%;
+            font-size: 40px;
+            margin-left: 40px;
+        }
+
+
+
+        .para>div:nth-child(2) {
+            width: 50%;
+            font-size: 25px;
+            margin-left: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        .para p {
+            font-family: 'Montserrat', sans-serif;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        p span {
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 40px;
+        }
+
+        .logos {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+            justify-content: space-between;
+
+        }
+
+        .logos div {
+            width: 100%;
+            /* border: 5px solid red; */
+            display: flex;
+            align-items: center;
+        }
+
+        .logos>div>img {
+            width: 70%;
+        }
+
+        .boards {
+            width: 85%;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .boards>div:nth-child(1) {
+            width: 50%;
+            /* border: 5px solid red; */
+        }
+
+        .boards>div:nth-child(2) {
+            width: 50%;
+            padding: 20px;
+
+        }
+
+        .boards video {
+            width: 100%;
+        }
+
+        .boards p {
+            font-size: 30px;
+        }
+
+        .boards p span {
+            width: 50%;
+            position: relative;
+            left: 40px;
+            top: 20px;
+            margin-right: 50px;
+        }
+
+        .boards p+p {
+            font-size: 20px;
+        }
+
+        .core-prod {
+            width: 100%;
+            /* height: 350px; */
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .core-prod>div:nth-child(1) {
+            margin-bottom: 30px;
+        }
+
+        .core-prod p {
+            width: 50%;
+            margin: auto;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .core-prod p+p {
+            margin: auto;
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+        }
+
+        p+div>video {
+            width: 100%;
+        }
+
+        .main-end p:nth-child(1){
+            font-family: 'Montserrat', sans-serif;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .main-end{
+            width: 100%;
+            height: 400px;
+         
+            text-align: center;
+            /* background-image: linear-gradient(#000133, #0C0D44); */
+            /* color: white; */
+            display: flex;
+            flex-direction: column;
+        }
+
+        #footer>img {
+            width: 60%;
+            margin-top: 2px;
+            margin-left: 20px;
+        }
+
+        span>img {
+            width: 10%;
+            position: relative;
+            top: 4px;
+            left: -10px;
+        }
+
+        h3 {
+            text-align: left;
+            position: relative;
+            left: 30px;
+        }
+
+        #containor {
+            width: 90%;
+            margin: auto;
+            /* border: 5px solid rebeccapurple; */
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* gap: 20px; */
+            background-color: #FFFFFF;
+        }
+
+        #containor>div:nth-child(3) {
+            position: relative;
+            left: -50px;
+        }
+
+      #containor li {
+            width: 100%;
+            list-style: none;
+            margin: 25px;
+            /* border: 10px solid red; */
+        }
+
+       #containor a {
+            text-decoration: none;
+            color: black;
+        }
+
+      #containor a:hover {
+            color: blue;
+        }
+
+        .extra-width {
+            width: 125%;
+        }
+
+        #bottom {
+            width: 100%;
+            display: flex;
+        }
+
+        .A {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 70px;
+            /* border: 5px solid red; */
+        }
+
+        select {
+            margin: 5px 20px;
+            font-size: 17px;
+            padding: 5px;
+        }
+
+        .A>div:nth-child(2) {
+            width: 70%;
+            height: 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+      .A img {
+            width: 60%;
+            margin-top: 2px;
+            margin-left: 20px;
+        }
+
+       .logo div>img:nth-child(4) {
+            position: relative;
+            top: 4px;
+        }
+
+        .B {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            /* border: 5px solid red; */
+
+        }
+
+        .B>div:nth-child(1) {
+            width: 40%;
+            ;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            /* border: 5px solid red; */
+
+        }
+
+        .B>div:nth-child(2) {
+            width: 80%;
+            display: flex;
+
+        }
+
+        .B>div:nth-child(1) img {
+            width: 100%;
+        }
+
+        .B a {
+            text-decoration: underline;
+            margin-right: 20px;
+        }
+
+        .C {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            /* border: 5px solid red; */
+            /* justify-content: space-between; */
+            gap: 20px;
+            /* gap: px; */
+        }
+        .C>div:nth-child(1){
+            display: flex;
+            flex-wrap: wrap;
+            /* border: 5px solid red; */
+            position: relative;
+            top:-20px
+
+        }
+        .C>div:nth-child(2){
+            position: relative;
+            top:-25px;
+            padding: 0px 75px;
+        }
+        .C>div>img{
+            width: 40%;
+        }
+
+
+        
     </style>
 </head>
 
@@ -271,9 +577,269 @@
         <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/first_fold/image.png"
             alt="">
 
-            <p>Trusted by 192000+ customers worldwide</p>
+        <p>Trusted by 192000+ customers worldwide</p>
     </div>
 
+    <div class="logos">
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hulu.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/bd.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/canva.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nhl.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/coca_cola.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/hubspot.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/Electronic_Arts.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/nautica.png"
+                alt=""></div>
+        <div><img
+                src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/customers/logos-v2/universal.png"
+                alt=""></div>
+
+
+    </div>
+
+
+    <div class="para">
+        <div>
+            <p>The work OS that lets you shape workflows,<span>your way</span></p>
+        </div>
+        <div>
+            <p>Boost your team’s alignment, efficiency, and productivity by customizing any workflow to fit your needs.
+            </p>
+        </div>
+    </div>
+
+    <div class="boards">
+        <div>
+            <video
+                src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/tabs/final-videos-tabs/7_status.mp4"></video>
+        </div>
+        <div>
+
+            <p><span><img
+                        src="https://dapulse-res.cloudinary.com/image/upload/e_colorize,co_rgb:6C6CFF/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/tabs/board_icon.svg"
+                        alt=""></span>Boards</p>
+            <p>Everything starts with a visual board — the core of monday.com Work OS. Tailor it your way and manage
+                anything from projects to departments.</p>
+        </div>
+    </div>
+
+    <div class="core-prod">
+        <div>
+            <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/monday_products_small.svg"
+                alt="">
+        </div>
+        <div>
+            <p>
+                <span>End-to-end products </span> to run
+                the core of your business
+            </p>
+            <p>Tailored products designed for every aspect of your teams' needs.</p>
+            <div>
+                <video
+                    src="https://dapulse-res.cloudinary.com/video/upload/q_auto,f_auto,cs_copy/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/products/products_video.mp4"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-end">
+        <div>
+            <p>Deliver your best work <span> with monday.com</span></p>
+            <div id="top-end">
+                <p>No credit card needed " " Unlimited time on Free plan</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="containor">
+        <div>
+
+
+            <ol>
+                <div id="footer">
+                    <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/monday-logo-x2.png"
+                        alt="">
+                </div>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Templates</a></li>
+                <li><a href="">SMB</a></li>
+                <li><a href="">Enterprise</a></li>
+                <li><a href="">Non-profits</a></li>
+                <li><a href="">Apps Marketplace</a></li>
+                <li><a href="">24/7 Support</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <h3>Features</h3>
+                <li><a href="">Docs</a></li>
+                <li><a href="">Integrations</a></li>
+                <li><a href="">Automations</a></li>
+                <li><a href="">Files</a></li>
+                <li><a href="">Dashboards</a></li>
+                <li><a href="">Kanban</a></li>
+                <li><a href="">Gantt</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <h3>Monday Products</h3>
+                <li class="extra-width"><span><img
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/wm_icon_footer.png"
+                            alt=""></span><a href="">monday work management</a></li>
+                <li><span><img
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/crm_icon_footer.png"
+                            alt=""></span><a href="">monday sales CRM</a></li>
+                <li><span><img
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/marketer_icon_footer.png"
+                            alt=""></span><a href="">monday marketer</a></li>
+                <li><span><img
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/projects_icon_footer.png"
+                            alt=""></span><a href="">monday projects</a></li>
+                <li><span><img
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/dev_icon_footer.png"
+                            alt=""></span><a href="">monday dev</a></li>
+            </ol>
+            <ol>
+                <h3>More by Monday.com</h3>
+                <li><span><img
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/canvas_icon_footer.png"
+                            alt=""></span><a href="">Canvas</a></li>
+                <li><span><img
+                            src="https://dapulse-res.cloudinary.com/image/upload/Generator_featured%20images/Home%20Page%20-%202022%20Rebrand/footer/workforms_icon_footer.png"
+                            alt=""></span><a href="">Workforms</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <h3>Use Cases</h3>
+                <li><a href="">Marketing</a></li>
+                <li><a href="">Project management</a></li>
+                <li><a href="">Sales</a></li>
+                <li><a href="">Developers</a></li>
+                <li><a href="">HR</a></li>
+                <li><a href="">IT</a></li>
+                <li><a href="">Operations</a></li>
+                <li><a href="">Constructions</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <h3>Company</h3>
+                <li><a href="">About us</a></li>
+                <li><a href="">Career-We're hiring!</a></li>
+                <li><a href="">monday-U</a></li>
+                <li><a href="">Press</a></li>
+                <li><a href="">Customer stories</a></li>
+                <li><a href="">Become s partner</a></li>
+                <li><a href="">Sustainablity and ESG</a></li>
+                <li><a href="">Affiliates</a></li>
+                <li><a href="">Digital Lifi</a></li>
+                <li><a href="">Investors</a></li>
+            </ol>
+        </div>
+
+        <div>
+            <ol>
+                <h3>Resources</h3>
+                <li><a href="">Help Centers</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Webinars</a></li>
+                <li><a href="">Startup for startup</a></li>
+                <li><a href="">Global Events</a></li>
+                <li><a href="">App Development</a></li>
+                <li><a href="">Find a Partner</a></li>
+                <li><a href="">Comapre</a></li>
+            </ol>
+        </div>
+    </div>
+    <hr>
+    <div id="bottom">
+
+        <div class="A">
+            <div>
+                <select name="language-picker-select" id="language-picker-select">
+                    <option lang="de" value="deutsch">Deutsch</option>
+                    <option lang="en" value="english" selected>English</option>
+                    <option lang="fr" value="francais">Français</option>
+                    <option lang="it" value="italiano">Italiano</option>
+                </select>
+            </div>
+            <div class="logo">
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/footer/iso-logo1.png"
+                    alt="">
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/footer/gdpr-logo.png"
+                    alt="">
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/footer/soc-logo.png"
+                    alt="">
+                <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/footer/hipaa-logo.png"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="B">
+            <div>
+
+                <a href="https://twitter.com/mondaydotcom"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/TWITTER-128.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/2525169/"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/LINKEDIN-128.png" alt=""></a>
+                <a href="https://www.facebook.com/mondaydotcom"><img
+                        src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/FB-128.png" alt=""></a>
+                <a href="https://www.youtube.com/channel/UCA9UvBiKHly15rN8u_Km3BQ"> <img
+                        src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/YOUTUBE-128.png" alt=""></a>
+                <a href="https://www.instagram.com/mondaydotcom"> <img
+                        src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/INSTAGRAM-128.png" alt=""></a>
+                <a href="https://www.tiktok.com/@mondaydotcom"> <img
+                        src="https://cdn2.iconfinder.com/data/icons/social-icons-grey/512/bing-128.png" alt=""></a>
+            </div>
+
+            <div>
+                <p><a href="">Security</a> | <a href="">Terms and Privacy</a> | <a href="">Privacy Policy</a> | All
+                    rights reserved @monday.com</p>
+            </div>
+        </div>
+
+        <div class="C">
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOZPc98RceBMKmmQ-J5Pt9bUhNyQiogU65Xw&usqp=CAU" alt="">
+                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrMfPwEalCFucneKVihbkaT7unpJhedWzLmW-ZoGDuYCBwJbnT-LPJ7Tc6p1V5C2UOYdo&usqp=CAU" alt="">
+                </div>
+
+                <div>
+                    <a href="">Accessibility Statement</a>
+                </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    
 
 
 

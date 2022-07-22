@@ -81,7 +81,7 @@
         <p>Signup for Free</p>
         <p>No credit card required</p>
 
-        <input type="email" placeholder="Enter your work email"><br>
+        <input type="email" placeholder="Enter your work email" id="email"><br>
         <input type="submit" value="Continue"><br>
 
           <p class="small">Or</p>
@@ -90,3 +90,27 @@
     
 </body>
 </html>
+
+
+<script>
+    let form = document.querySelector("form")
+
+    let signup=JSON.parse(localStorage.getItem("signupMLS"))||[];
+    form.addEventListener("submit",function(e){
+     e.preventDefault();
+
+     let obj={
+        email:form.email.value,
+     }
+
+     if(obj.email===""){
+        alert("Enter email");
+     }
+     else{
+        signup.push(obj)
+        localStorage.setItem("signupMLS",JSON.stringify(signup));
+        window.location.href="login.html"
+     }
+
+    })
+</script>

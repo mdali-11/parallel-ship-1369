@@ -111,7 +111,7 @@
         <p class="top">Login to your Account</p>
 
         <h3>Enter your work email address</h3>
-        <input type="email" placeholder="example@company.com"><br>
+        <input type="email" placeholder="example@company.com" id="email"><br>
         <input type="submit" value="Next →">
      
         <div class="line">
@@ -129,3 +129,35 @@
 </body>
 
 </html>
+
+<script>
+    let signupdata=JSON.parse(localStorage.getItem("signupMLS"))||[];
+
+    let form=document.querySelector("form")
+    form.addEventListener("submit",function(e){
+
+       e.preventDefault();
+       
+       let obj={
+        email:form.email.value,
+       }
+       
+       if(check(signupdata,obj)===true){
+        alert("login successful");
+        localStorage.setItem("loginMLS",JSON.stringify(obj))    
+        window.location.href="navbar.html"    
+       }
+       else{
+        alert("user does not exist")
+       }
+    })
+
+    function check(signup,obj){
+        for(let i=0;i<signup.length;i++){
+        if(signup[i].email===obj.email){
+               return true;
+        }
+    }
+    return false;
+}
+</script>

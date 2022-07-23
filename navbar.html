@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar</title>
+    <title>monday.com A new way of working</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,6 +14,12 @@
 
 
     <style>
+           
+           body{
+            margin: 0;
+            padding: 0;
+            padding-top: 10px;
+           }
         h1 {
             /* font-family: 'Barlow Condensed', sans-serif; */
             font-family: 'Montserrat', sans-serif;
@@ -21,7 +27,7 @@
         }
 
         nav {
-            width: 100vw;
+            width: 100%;
             height: 65px;
             display: flex;
             justify-content: space-around;
@@ -52,16 +58,17 @@
 
 
 
-        #navbar ol {
+        nav ol {
             display: flex;
+            justify-content: space-between;
         }
 
-        #navbar li {
+        nav li {
             margin: 2px 9px;
             list-style: none;
         }
 
-        #navbar a {
+        nav a {
             text-decoration: none;
             font-size: 17px;
         }
@@ -142,11 +149,13 @@
             /* margin-bottom: -10px; */
 
         }
-        #checkbox h3{
+
+        #checkbox h3 {
             text-align: center;
             margin-left: -50px;
         }
-        #checkbox>div>div:nth-child(2){
+
+        #checkbox>div>div:nth-child(2) {
             width: 60%;
         }
 
@@ -358,11 +367,12 @@
         }
 
         #containor {
-            width: 90%;
-            margin: auto;
+            width: 100%;
+            padding-top: 40px;
             /* border: 5px solid rebeccapurple; */
             display: grid;
             grid-template-columns: repeat(6, 1fr);
+            justify-content: space-between;
             /* gap: 20px; */
             background-color: #FFFFFF;
         }
@@ -388,9 +398,9 @@
             color: blue;
         }
 
-        .extra-width {
+        /* .extra-width {
             width: 125%;
-        }
+        } */
 
         #bottom {
             width: 100%;
@@ -489,6 +499,60 @@
         .C>div>img {
             width: 40%;
         }
+
+        /* megamenu */
+        #navbar .megamenu {
+            position: absolute;
+            /* top: 100%; */
+
+            width: 100%;
+            background-color: #fff;
+            opacity: 0;
+            visibility: hidden;
+            height: 450px;
+            top:100%;
+            left: 0;
+            transition: 0.2s;
+            
+            box-shadow: 0px 10px 2px 3px lightblue;
+        }
+
+        #navbar li:hover .megamenu {
+            opacity: 1;
+            top: 100%;
+            visibility: visible;
+
+        }
+        .megamenu>p{
+            margin-left: 150px;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        .features a{
+            color: black;
+            padding: 20px;
+            box-shadow: 5px 5px 2px 2px grey;
+        }
+        .features a:hover{
+            background-color: aliceblue;
+        }
+
+        .megamenu .features {
+           
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content:space-around;
+            gap: 20px;
+          
+        }
+
+        .goog-logo-link {
+    display:none !important;
+} 
+.goog-te-gadget{
+    color: transparent !important;
+}
     </style>
 </head>
 
@@ -502,10 +566,62 @@
             </div>
             <div>
                 <ol>
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Use Cases</a></li>
-                    <li><a href="kanban.html">Features</a></li>
-                    <li><a href="">Resources</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Use Cases</a></li>
+                    <li><a href="#">Features</a>
+                    <div class="megamenu">
+
+                        <p>~key Features</p>
+                        <div class="features">
+                            <a href="">
+                                <div>
+                                    <h1>Dashboard</h1>
+                                    <p>Simplify decision making with real time insights</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div>
+                                    <h1>Automations</h1>
+                                    <p>save time and leave repetitive work behind</p>
+                                </div>
+                            </a>
+                            <a href="kanban.html">
+                                <div>
+                                    <h1>Kanban</h1>
+                                    <p>Prioritize tasks and balance demands according to cpaacity</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div>
+                                    <h1>Files</h1>
+                                    <p>Add context to your tasks by uploading any file type</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div>
+                                    <h1>Integration</h1>
+                                    <p>Kepp your business tools all in one place</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div>
+                                    <h1>Gantt</h1>
+                                    <p>Visualize project miletones and dependencies</p>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div>
+                                    <h1>Docs</h1>
+                                    <p>Turn words into workflows and collaborate in real time</p>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    </li>
+                    <li><a href="#">Resources</a>
+                    </li>
 
                 </ol>
             </div>
@@ -566,48 +682,48 @@
             </div>
             <div>
                 <div>
-                <!-- <input type="checkbox"><br> -->
-                <img src="https://i.postimg.cc/1Xt3VD31/p5.png" alt="">
+                    <!-- <input type="checkbox"><br> -->
+                    <img src="https://i.postimg.cc/1Xt3VD31/p5.png" alt="">
                 </div>
                 <div>
-                <h3>Sales and CRM</h3>
-            </div>
-            </div>
-            <div>
-                <div>
-                <!-- <input type="checkbox"><br> -->
-                <img src="https://i.postimg.cc/rpXsZdQ5/p6.png" alt="">
-            </div>
-            <div>
-                <H3>Task Management</H3>
-            </div>
+                    <h3>Sales and CRM</h3>
+                </div>
             </div>
             <div>
                 <div>
-                <!-- <input type="checkbox"><br> -->
-                <img src="https://i.postimg.cc/DZ7ZF9VZ/p7.png" alt="">
-            </div>
-            <div>
-                <h3>HR</h3>
-            </div>
+                    <!-- <input type="checkbox"><br> -->
+                    <img src="https://i.postimg.cc/rpXsZdQ5/p6.png" alt="">
+                </div>
+                <div>
+                    <H3>Task Management</H3>
+                </div>
             </div>
             <div>
                 <div>
-                <!-- <input type="checkbox"><br> -->
-                <img src="https://i.postimg.cc/7L36FxWd/p8.png" alt="">
-            </div>
-            <div>
-                <H3>Operations</H3>
-            </div>
+                    <!-- <input type="checkbox"><br> -->
+                    <img src="https://i.postimg.cc/DZ7ZF9VZ/p7.png" alt="">
+                </div>
+                <div>
+                    <h3>HR</h3>
+                </div>
             </div>
             <div>
                 <div>
-                <!-- <input type="checkbox"><br> -->
-                <img src="https://i.postimg.cc/9M1ffLVB/p9.png" alt="">
+                    <!-- <input type="checkbox"><br> -->
+                    <img src="https://i.postimg.cc/7L36FxWd/p8.png" alt="">
+                </div>
+                <div>
+                    <H3>Operations</H3>
+                </div>
             </div>
             <div>
-                <h3>More Workflows</h3>
-            </div>
+                <div>
+                    <!-- <input type="checkbox"><br> -->
+                    <img src="https://i.postimg.cc/9M1ffLVB/p9.png" alt="">
+                </div>
+                <div>
+                    <h3>More Workflows</h3>
+                </div>
             </div>
         </div>
 
@@ -831,12 +947,13 @@
 
         <div class="A">
             <div>
-                <select name="language-picker-select" id="language-picker-select">
-                    <option lang="de" value="deutsch">Deutsch</option>
+                <div style="margin-left: 20px;" id="google-element"></div>
+                    <script src="https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate"></script>
+                    <!-- <option lang="de" value="deutsch">Deutsch</option>
                     <option lang="en" value="english" selected>English</option>
                     <option lang="fr" value="francais">Français</option>
                     <option lang="it" value="italiano">Italiano</option>
-                </select>
+                </select> -->
             </div>
             <div class="logo">
                 <img src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/img/footer/iso-logo1.png"
@@ -916,6 +1033,10 @@
     homepage.addEventListener("click", function () {
         window.location.href = "navbar.html"
     })
+
+    function loadGoogleTranslate(){
+        new google.translate.TranslateElement({includedLanguages:"en,fr,it,ar,br,zh,hr,fr,df,in"},"google-element")
+    }
 
 
 
